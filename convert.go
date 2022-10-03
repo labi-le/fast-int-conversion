@@ -4,6 +4,7 @@ type Integer interface {
 	int | int8 | int16 | int32 | int64 | uint | uint8 | uint16 | uint32 | uint64 | uintptr
 }
 
+// StrToInt converts a string to an integer.
 func StrToInt[T Integer](s string) T {
 	var val T
 
